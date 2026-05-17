@@ -45,8 +45,8 @@ def send_audit_report_email(prospect_email: str, prospect_name: str, company_nam
     <p>I have attached your personalized audit to this email. Please review it at your convenience, and let me know if you would like to schedule a brief follow-up call to discuss the implementation of these tools.</p>
     
     <p>Best regards,</p>
-    <p><strong>Teja Karri</strong><br>
-    AI Software Engineer, Simplifi-IQ</p>
+    <p><strong>Simplifi-IQ Automated System</strong><br>
+    B2B Sales Pipeline</p>
     """
 
     try:
