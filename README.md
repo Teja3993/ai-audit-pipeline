@@ -26,7 +26,7 @@ graph TD
     Client[Client / Webhook] -->|POST /api/leads| Gateway(FastAPI Router)
     
     %% Synchronous vs Asynchronous Boundary
-    subgraph Core Engine (Async Worker)
+    subgraph CoreEngine [Core Engine (Async Worker)]
         Gateway -->|1. Initialize Row| DB[(SQLite DB)]
         Gateway -->|2. Delegate Task| Queue[Background Tasks]
         
@@ -52,7 +52,6 @@ graph TD
     Delivery -->|Archive| Drive[Google Drive]
     Delivery -->|Log| Sheets[Google Sheets]
 ```
-
 ## III. Setup Instructions
 
 ### Prerequisites
@@ -71,7 +70,7 @@ Follow these steps to set up the pipeline locally.
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/yourusername/simplifi-iq-audit.git](https://github.com/yourusername/simplifi-iq-audit.git)
+git clone [https://github.com/Teja3993/ai-audit-pipeline.git](https://github.com/Teja3993/ai-audit-pipeline.git)
 cd simplifi-iq-audit
 ```
 
