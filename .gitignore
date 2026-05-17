@@ -1,0 +1,20 @@
+# Python Artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual Environments
+venv/
+
+# Environment Variables & Credentials
+.env
+service_account.json
+
+# Local Database States
+*.db
+*.sqlite3
+leads_state.db
+
+# App Outputs & Logs
+generated_reports/
+logs/

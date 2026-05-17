@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+sqlalchemy
+trafilatura
+beautifulsoup4
+groq
+jinja2
+weasyprint
+resend
+gspread
+google-api-python-client
+pytest
