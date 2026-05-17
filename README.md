@@ -215,10 +215,9 @@ To keep the pipeline fast and avoid hitting strict LLM token limits, the scraper
 
 Additionally, when the system uses the BeautifulSoup fallback, it specifically targets standard text tags (`<h1>`, `<h2>`, `<p>`, `<li>`). Because companies optimize their websites for SEO, they naturally place their core business descriptions inside these exact tags. This deliberate tradeoff allows the system to extract the most valuable context while cleanly ignoring the website's background code.
 
-## VII. Bonus Implementations
+## VII. Extended Integrations & Telemetry
 
-As requested in the assessment rubric, the following bonus features have been fully integrated into the asynchronous pipeline:
+To provide enterprise-grade observability and secure cloud persistence, the pipeline includes fully integrated workflows with external cloud infrastructure:
 
 * **Google Sheets Telemetry (Live Tracking):** Every lead that enters the system is automatically logged to a remote Google Sheet. The pipeline records the prospect's name, email, company name, a generated timestamp, and the final execution status (e.g., `SUCCESS` or `FAILED`). This acts as a live, observable CRM tracker for the sales team.
 * **Google Drive Archival:** Upon successful generation, the final PDF audit is automatically transmitted to a specified Google Drive folder for long-term storage. This keeps the local server's filesystem clean and ensures the team has permanent cloud access to all generated reports.
-
